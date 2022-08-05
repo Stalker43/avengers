@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+}
+.split {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+}
+.split.right {
+  right: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://images.kinorium.com/movie/shot/758084/w1500_48548422.jpg);
+  background-size: cover;
+  transition: all 1s ease-in-out;
+}
+.split.left {
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://images.kinorium.com/movie/shot/758084/w1500_49029863.jpg);
+  background-size: cover;
+  transition: all 1s ease-in-out;
+}
+.text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  top: 40%;
+}
+h1 {
+  color: #fff;
+  font-size: 50px;
+}
+.btn {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px 50px;
+  border: 2px solid #fff;
+}
+.hover-left .left {
+  width: 70%;
+}
+.hover-left .right {
+  width: 30%;
+}
+.hover-right .right {
+  width: 70%;
+}
+.hover-right .left {
+  width: 30%;
+}
+.btn {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  border: 2px solid #fff;
+  padding: 25px;
+}
+.btn:hover {
+  background-color: gray;
+}
